@@ -1,0 +1,36 @@
+{
+  "TKT-2026-90018": {
+    "ticket_id": "TKT-2026-90018",
+    "customer_id": "CUST-10236",
+    "category": "General Complaint",
+    "description": "Account is frozen",
+    "date_of_incident": "today",
+    "amount": null,
+    "priority": "Low",
+    "status": "Logged",
+    "logged_on": "08-May-2026 07:23 PM",
+    "last_updated": "08-May-2026 07:23 PM",
+    "updated_by": "System",
+    "remark": "Complaint received and being reviewed.",
+    "email_sent_to": "p******g@outlook.com",
+    "resolution_eta": "13-May-2026 by 07:23 PM",
+    "session_id": "SESS-20260508-410"
+  },
+  "TKT-2026-37058": {
+    "ticket_id": "TKT-2026-37058",
+    "customer_id": "CUST-10236",
+    "category": "General Complaint",
+    "description": "My account is frozen, please unfreeze",
+    "date_of_incident": "today",
+    "amount": null,
+    "priority": "Low",
+    "status": "Logged",
+    "logged_on": "08-May-2026 08:23 PM",
+    "last_updated": "08-May-2026 08:23 PM",
+    "updated_by": "System",
+    "remark": "Complaint received and being reviewed.",
+    "email_sent_to": "g@outlook.com",
+    "resolution_eta": "13-May-2026 by 08:23 PM",
+    "session_id": "SESS-20260508-192"
+  }
+}
