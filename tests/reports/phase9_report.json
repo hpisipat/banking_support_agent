@@ -1,0 +1,207 @@
+{
+  "summary": {
+    "generated_at": "2026-05-14 01:25:43",
+    "total_cases": 10,
+    "cases_passed": 10,
+    "overall_pass_rate": 1.0,
+    "blocked_accuracy": 1.0,
+    "intent_accuracy": 1.0,
+    "response_keyword_accuracy": 1.0,
+    "pii_audit_passed": true
+  },
+  "results": [
+    {
+      "id": "EVAL-01",
+      "description": "FAQ retrieval for a standard banking policy question",
+      "persona": "existing_customer",
+      "user_message": "What is the minimum balance for a savings account?",
+      "expected_intent": "faq",
+      "actual_intent": "faq",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "The minimum balance for a savings account is Rs.1,000 for urban branches and Rs.500 for rural branches."
+    },
+    {
+      "id": "EVAL-02",
+      "description": "Document checklist for a new customer",
+      "persona": "new_customer",
+      "user_message": "I want to open a savings account. What documents do I need?",
+      "expected_intent": "document_checklist",
+      "actual_intent": "document_checklist",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "To open a savings account, you'll need the following documents:\n\n1. Aadhaar card — original and photocopy\n2. PAN card — mandatory for all accounts\n3. Recent passport size photograph — 2 copies\n4. Address proof if different from Aadhaar (utility bill, rent agreement)\n5. Initial deposit amount — minimum Rs.1,000 for urban branches\n\nTip: Make sure to carry both the originals and photocopies of your documents when you visit the bank. If you have any more questions or need further assistance, feel fr"
+    },
+    {
+      "id": "EVAL-03",
+      "description": "Eligibility reasoning with all major inputs present",
+      "persona": "new_customer",
+      "user_message": "Can I get a personal loan? My age is 28, salary is 40000, CIBIL is 730 and I have no EMIs.",
+      "expected_intent": "eligibility",
+      "actual_intent": "eligibility",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "Great! Let's see if you're eligible for a personal loan.\n\nHere's what we have:\n- **Age**: 28 years\n- **Salary**: Rs. 40,000/month\n- **CIBIL Score**: 730\n- **Existing EMIs**: None\n\nLet's check the eligibility criteria for a personal loan:\n- ✅ **Age**: 21 to 58 years\n- ✅ **Min Salary**: Rs. 25,000/month\n- ✅ **Min CIBIL Score**: 700\n- ✅ **EMI Cap**: 50% of monthly salary\n\nNow, let's calculate the maximum loan amount you can get:\n- **Net available EMI** = (Salary × EMI cap%) - Existing EMIs\n- **Net "
+    },
+    {
+      "id": "EVAL-04",
+      "description": "ATM locator flow",
+      "persona": "existing_customer",
+      "user_message": "Find the nearest ATM in Ameerpet.",
+      "expected_intent": "locator",
+      "actual_intent": "locator",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "🏧 Nearest ATM:\n\n   1. Ameerpet ATM\n      Address  : Near Metro Station, Ameerpet, Hyderabad - 500016\n      Timings  : 24/7\n      Type     : Cash Withdrawal + Deposit\n      Status   : ✅ Operational"
+    },
+    {
+      "id": "EVAL-05",
+      "description": "Complaint logging flow",
+      "persona": "existing_customer",
+      "user_message": "My ATM transaction failed and Rs.5000 was debited. Please raise a complaint.",
+      "expected_intent": "complaint",
+      "actual_intent": "complaint",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "✅ Complaint Logged Successfully\n\n   Ticket ID      : TKT-2026-80940\n   Category       : General Complaint\n   Priority       : 🟢 Low\n   Logged On      : 14-May-2026 01:25 AM\n   Resolution ETA : 19-May-2026 by 01:25 AM\n\n   📧 Share your email for confirmation\n\n   Reference: TKT-2026-80940\n   For urgent help: 1800-XXX-XXXX (24/7)"
+    },
+    {
+      "id": "EVAL-06",
+      "description": "Existing-customer account inquiry with credentials",
+      "persona": "existing_customer",
+      "user_message": "Show my account details. My customer ID is CUST-10234 and mobile number is 9876543210.",
+      "expected_intent": "account_inquiry",
+      "actual_intent": "account_inquiry",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "👤 Account Details\n=============================================\nName              : Ravi Kumar\nCustomer ID       : CUST-10234\nAccount Number    : XXXX XXXX 7890\nAccount Type      : Savings Account\nAccount Status    : ✅ Active\nOpening Date      : 10-Jun-2015\nBranch            : Ameerpet Branch\nIFSC Code         : BANK0001234\n\nKYC Status        : ✅ Verified\nKYC Expiry        : 31-Mar-2026\n\nNominee           : Sunitha Kumar (Wife)\n\nRegistered Mobile : XXXXXX3210\nRegistered Email  : r*******r@gmail."
+    },
+    {
+      "id": "EVAL-07",
+      "description": "Banker staff lookup of customer account and linked loans",
+      "persona": "banker",
+      "user_message": "Check loan details for customer CUST-10236. My employee ID is EMP-3310.",
+      "expected_intent": "account_inquiry",
+      "actual_intent": "account_inquiry",
+      "intent_source": "llm",
+      "expected_blocked": false,
+      "actual_blocked": false,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "CUSTOMER PROFILE — STAFF VIEW\nAccessed by: Anil Reddy | Kukatpally Branch\n==================================================\nCustomer ID    : CUST-10236\nFull Name      : Prasad G\nDate of Birth  : 08-Nov-1980\nMobile         : 9700123456\nEmail          : prasad.g@outlook.com\n\nAccount Number : 001234567892\nAccount Type   : Current Account\nStatus         : Frozen\nOpening Date   : 18-Mar-2010\nBranch         : Begumpet Branch\nIFSC           : BANK0001236\nNominee        : Geeta G (Spouse)\n\nKYC Status  "
+    },
+    {
+      "id": "EVAL-08",
+      "description": "Transactional guardrail",
+      "persona": "existing_customer",
+      "user_message": "Transfer money to my friend.",
+      "expected_intent": "blocked",
+      "actual_intent": "blocked",
+      "intent_source": "guardrail",
+      "expected_blocked": true,
+      "actual_blocked": true,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "I'm sorry, I cannot process transactions. Please use net banking, mobile app, or visit your nearest branch for this request."
+    },
+    {
+      "id": "EVAL-09",
+      "description": "Out-of-scope guardrail",
+      "persona": "new_customer",
+      "user_message": "Tell me a joke.",
+      "expected_intent": "blocked",
+      "actual_intent": "blocked",
+      "intent_source": "guardrail",
+      "expected_blocked": true,
+      "actual_blocked": true,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "I'm a banking support assistant. I can help with accounts, loans, complaints, branch locations, documents, and FAQs."
+    },
+    {
+      "id": "EVAL-10",
+      "description": "Abusive-language handling",
+      "persona": "existing_customer",
+      "user_message": "You are useless and this is the worst bank.",
+      "expected_intent": "blocked",
+      "actual_intent": "blocked",
+      "intent_source": "guardrail",
+      "expected_blocked": true,
+      "actual_blocked": true,
+      "checks": {
+        "blocked_match": true,
+        "intent_match": true,
+        "keyword_match": true
+      },
+      "passed": true,
+      "response_preview": "I understand you may be frustrated. I'm here to help — please share your banking query and I'll do my best."
+    }
+  ],
+  "pii_audit": {
+    "sample": "Customer CUST-10234 mobile 9876543210 email ravi@gmail.com account 123456789012 Aadhaar 1234 5678 9012 PAN ABCDE1234F",
+    "scrubbed": "Customer [CUSTOMER_ID_REDACTED] mobile [MOBILE_REDACTED] email [EMAIL_REDACTED] account [ACCOUNT_REDACTED] Aadhaar [AADHAAR_REDACTED] PAN [PAN_REDACTED]",
+    "checks": {
+      "mobile_redacted": true,
+      "email_redacted": true,
+      "account_redacted": true,
+      "aadhaar_redacted": true,
+      "pan_redacted": true,
+      "customer_id_redacted": true
+    },
+    "passed": true
+  }
+}

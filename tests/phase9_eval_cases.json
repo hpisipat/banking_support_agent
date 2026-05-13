@@ -1,0 +1,92 @@
+[
+  {
+    "id": "EVAL-01",
+    "persona": "existing_customer",
+    "user_message": "What is the minimum balance for a savings account?",
+    "expected_intent": "faq",
+    "expected_blocked": false,
+    "keywords_any": ["minimum balance", "savings"],
+    "description": "FAQ retrieval for a standard banking policy question"
+  },
+  {
+    "id": "EVAL-02",
+    "persona": "new_customer",
+    "user_message": "I want to open a savings account. What documents do I need?",
+    "expected_intent": "document_checklist",
+    "expected_blocked": false,
+    "keywords_any": ["aadhaar", "pan", "photograph"],
+    "description": "Document checklist for a new customer"
+  },
+  {
+    "id": "EVAL-03",
+    "persona": "new_customer",
+    "user_message": "Can I get a personal loan? My age is 28, salary is 40000, CIBIL is 730 and I have no EMIs.",
+    "expected_intent": "eligibility",
+    "expected_blocked": false,
+    "keywords_any": ["cibil", "emi", "eligible"],
+    "description": "Eligibility reasoning with all major inputs present"
+  },
+  {
+    "id": "EVAL-04",
+    "persona": "existing_customer",
+    "user_message": "Find the nearest ATM in Ameerpet.",
+    "expected_intent": "locator",
+    "expected_blocked": false,
+    "keywords_any": ["ameerpet", "atm"],
+    "description": "ATM locator flow"
+  },
+  {
+    "id": "EVAL-05",
+    "persona": "existing_customer",
+    "user_message": "My ATM transaction failed and Rs.5000 was debited. Please raise a complaint.",
+    "expected_intent": "complaint",
+    "expected_blocked": false,
+    "keywords_any": ["ticket", "complaint", "priority"],
+    "description": "Complaint logging flow"
+  },
+  {
+    "id": "EVAL-06",
+    "persona": "existing_customer",
+    "user_message": "Show my account details. My customer ID is CUST-10234 and mobile number is 9876543210.",
+    "expected_intent": "account_inquiry",
+    "expected_blocked": false,
+    "keywords_any": ["account", "customer id", "account type"],
+    "description": "Existing-customer account inquiry with credentials"
+  },
+  {
+    "id": "EVAL-07",
+    "persona": "banker",
+    "user_message": "Check loan details for customer CUST-10236. My employee ID is EMP-3310.",
+    "expected_intent": "account_inquiry",
+    "expected_blocked": false,
+    "keywords_any": ["customer profile", "loan", "accessed by"],
+    "description": "Banker staff lookup of customer account and linked loans"
+  },
+  {
+    "id": "EVAL-08",
+    "persona": "existing_customer",
+    "user_message": "Transfer money to my friend.",
+    "expected_intent": "blocked",
+    "expected_blocked": true,
+    "keywords_any": ["cannot process transactions", "nearest branch"],
+    "description": "Transactional guardrail"
+  },
+  {
+    "id": "EVAL-09",
+    "persona": "new_customer",
+    "user_message": "Tell me a joke.",
+    "expected_intent": "blocked",
+    "expected_blocked": true,
+    "keywords_any": ["banking support assistant", "accounts", "loans"],
+    "description": "Out-of-scope guardrail"
+  },
+  {
+    "id": "EVAL-10",
+    "persona": "existing_customer",
+    "user_message": "You are useless and this is the worst bank.",
+    "expected_intent": "blocked",
+    "expected_blocked": true,
+    "keywords_any": ["frustrated", "here to help"],
+    "description": "Abusive-language handling"
+  }
+]

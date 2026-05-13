@@ -2,6 +2,8 @@
 ### IITM Pravartak — Application Programming in Agentic AI
 ### Capstone Project
 
+Project GitHub URL - https://github.com/hpisipat/banking_support_agent
+
 A non-transactional AI-powered banking support agent built
 using Python, LangChain, and OpenAI GPT-4o. Serves 3 user
 personas across 6 feature areas with production-grade
@@ -478,3 +480,26 @@ docker compose up --build
 **Packaging notes:**
 - Keep `faiss_index/` in the repo so the FAQ service works immediately inside the containers
 - Add your `OPENAI_API_KEY` to `.env` before running `docker compose up --build`
+
+---
+
+### Phase 9 - Evaluation & Review
+
+**Evaluation artifacts added:**
+- `tests/phase9_eval_cases.json` - 10-query evaluation suite across personas, tools, and guardrails
+- `tests/evaluate_phase9.py` - runnable evaluation harness that scores outcomes and writes reports
+
+**What Phase 9 measures:**
+- Guardrail accuracy (transactional, out-of-scope, abusive queries)
+- Intent accuracy
+- Response quality via keyword-based expected-output checks
+- PII redaction audit using the logger scrubber
+
+**Run Phase 9 evaluation:**
+```bash
+python tests/evaluate_phase9.py
+```
+
+**Generated reports:**
+- `tests/reports/phase9_report.json`
+- `tests/reports/phase9_report.md`

@@ -2060,3 +2060,403 @@
 {"timestamp": "2026-05-13 22:40:35", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=694"}
 {"timestamp": "2026-05-13 22:40:35", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=694"}
 {"timestamp": "2026-05-13 22:40:36", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account']"}
+{"timestamp": "2026-05-13 23:22:07", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:22:08", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=2 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:22:08", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "session_ended", "details": "total_turns=2 reason=exit_command"}
+{"timestamp": "2026-05-13 23:22:10", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "feedback_saved", "details": "intent=session rating=positive comment=False"}
+{"timestamp": "2026-05-13 23:22:10", "session_id": "SESS-20260513-380", "persona": "new_customer", "level": "INFO", "event": "feedback_received", "details": "intent=session rating=positive"}
+{"timestamp": "2026-05-13 23:24:54", "session_id": "SESS-20260513-592", "persona": "existing_customer", "level": "INFO", "event": "memory_loaded", "details": "session_count=7 last_seen=2026-05-13 22:10"}
+{"timestamp": "2026-05-13 23:24:54", "session_id": "SESS-20260513-592", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "persona=existing_customer returning=True"}
+{"timestamp": "2026-05-13 23:26:16", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_new_user", "details": "no previous memory found"}
+{"timestamp": "2026-05-13 23:26:16", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "session_started", "details": "persona=new_customer returning=False"}
+{"timestamp": "2026-05-13 23:26:36", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "I want to open a new account"}
+{"timestamp": "2026-05-13 23:26:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:26:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:26:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:26:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:26:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "document_tool_called", "details": "I want to open a new account"}
+{"timestamp": "2026-05-13 23:26:43", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=302"}
+{"timestamp": "2026-05-13 23:26:43", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=302"}
+{"timestamp": "2026-05-13 23:26:44", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account', 'current_account', 'joint_account', 'nri_account']"}
+{"timestamp": "2026-05-13 23:26:54", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "savings"}
+{"timestamp": "2026-05-13 23:26:55", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:26:56", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='savings' result='no'"}
+{"timestamp": "2026-05-13 23:26:56", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_continued", "details": "last_intent=document_checklist reply='savings'"}
+{"timestamp": "2026-05-13 23:26:56", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:26:56", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:26:56", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:26:56", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "document_tool_called", "details": "savings"}
+{"timestamp": "2026-05-13 23:26:57", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=497"}
+{"timestamp": "2026-05-13 23:26:57", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=497"}
+{"timestamp": "2026-05-13 23:26:58", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account']"}
+{"timestamp": "2026-05-13 23:27:19", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "which is the nearest branch to Kompally"}
+{"timestamp": "2026-05-13 23:27:24", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "locator"}
+{"timestamp": "2026-05-13 23:27:24", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=locator style=default"}
+{"timestamp": "2026-05-13 23:27:24", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "locator"}
+{"timestamp": "2026-05-13 23:27:24", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "locator_tool"}
+{"timestamp": "2026-05-13 23:27:24", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "locator_tool_called", "details": "which is the nearest branch to Kompally"}
+{"timestamp": "2026-05-13 23:27:28", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=16.6km"}
+{"timestamp": "2026-05-13 23:27:30", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=15.5km"}
+{"timestamp": "2026-05-13 23:27:32", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=16.3km"}
+{"timestamp": "2026-05-13 23:27:34", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=22.8km"}
+{"timestamp": "2026-05-13 23:27:37", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=14.8km"}
+{"timestamp": "2026-05-13 23:27:38", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=16.6km"}
+{"timestamp": "2026-05-13 23:27:41", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=15.5km"}
+{"timestamp": "2026-05-13 23:27:43", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=21.9km"}
+{"timestamp": "2026-05-13 23:27:45", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=16.2km"}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SYSTEM-LOCATOR", "persona": "system", "level": "INFO", "event": "distance_method", "details": "ors_api \u2014 road_distance=14.6km"}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "locator_distance_calculated", "details": "area=Kompally type=branch"}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=locator style=default length=1002"}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['branch_locator']"}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=1 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:27:46", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_auto_saved", "details": "turns=3"}
+{"timestamp": "2026-05-13 23:28:27", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "Thanks"}
+{"timestamp": "2026-05-13 23:28:28", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "small_talk", "details": "Thanks"}
+{"timestamp": "2026-05-13 23:28:40", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "Can I apply for credit card as well"}
+{"timestamp": "2026-05-13 23:28:42", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:28:42", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:28:42", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:28:42", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:28:42", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "document_tool_called", "details": "Can I apply for credit card as well"}
+{"timestamp": "2026-05-13 23:28:43", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=136"}
+{"timestamp": "2026-05-13 23:28:43", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=136"}
+{"timestamp": "2026-05-13 23:28:43", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['credit_card']"}
+{"timestamp": "2026-05-13 23:28:58", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "check if I am eligible"}
+{"timestamp": "2026-05-13 23:28:59", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "eligibility"}
+{"timestamp": "2026-05-13 23:28:59", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=eligibility style=default"}
+{"timestamp": "2026-05-13 23:28:59", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "eligibility"}
+{"timestamp": "2026-05-13 23:28:59", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "eligibility_tool"}
+{"timestamp": "2026-05-13 23:28:59", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "eligibility_tool_called", "details": "check if I am eligible"}
+{"timestamp": "2026-05-13 23:29:00", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "eligibility_llm_response", "details": "length=321"}
+{"timestamp": "2026-05-13 23:29:00", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=eligibility style=default length=321"}
+{"timestamp": "2026-05-13 23:29:01", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['credit_card']"}
+{"timestamp": "2026-05-13 23:29:35", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "40 , income is 100000 , cibil - 700 , 2 credit cards , 1 home loan"}
+{"timestamp": "2026-05-13 23:29:36", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:29:36", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "WARNING", "event": "intent_unknown", "details": "40 , income is 100000 , cibil - 700 , 2 credit cards , 1 home loan"}
+{"timestamp": "2026-05-13 23:29:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=llm_contextual length=698"}
+{"timestamp": "2026-05-13 23:29:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:29:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=2 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:29:41", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_auto_saved", "details": "turns=6"}
+{"timestamp": "2026-05-13 23:30:00", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "Thanks"}
+{"timestamp": "2026-05-13 23:30:05", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "small_talk", "details": "Thanks"}
+{"timestamp": "2026-05-13 23:30:13", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "No"}
+{"timestamp": "2026-05-13 23:30:14", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:30:15", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='No' result='yes'"}
+{"timestamp": "2026-05-13 23:30:15", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:30:15", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=3 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:30:15", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "session_ended", "details": "total_turns=6 reason=natural_ending"}
+{"timestamp": "2026-05-13 23:30:34", "session_id": "SESS-20260513-988", "persona": "new_customer", "level": "INFO", "event": "feedback_saved", "details": "intent=session rating=positive comment=False"}
+{"timestamp": "2026-05-13 23:30:40", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_new_user", "details": "no previous memory found"}
+{"timestamp": "2026-05-13 23:30:40", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "persona=existing_customer returning=False"}
+{"timestamp": "2026-05-13 23:31:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "what is the process to close a personal loan"}
+{"timestamp": "2026-05-13 23:31:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "faq"}
+{"timestamp": "2026-05-13 23:31:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=faq style=default"}
+{"timestamp": "2026-05-13 23:31:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "faq"}
+{"timestamp": "2026-05-13 23:31:09", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "faq_tool"}
+{"timestamp": "2026-05-13 23:31:09", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "faq_tool_called", "details": "what is the process to close a personal loan"}
+{"timestamp": "2026-05-13 23:31:11", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "faq_chunks_retrieved", "details": "count=3"}
+{"timestamp": "2026-05-13 23:31:13", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "WARNING", "event": "faq_fallback", "details": "not in FAQ: what is the process to close a personal loan"}
+{"timestamp": "2026-05-13 23:31:13", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=faq style=default length=90"}
+{"timestamp": "2026-05-13 23:31:14", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['personal_loan']"}
+{"timestamp": "2026-05-13 23:31:41", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "Sure, what is the process to open a fixed deposit"}
+{"timestamp": "2026-05-13 23:31:42", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:31:42", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:31:42", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:31:42", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:31:42", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "document_tool_called", "details": "Sure, what is the process to open a fixed deposit"}
+{"timestamp": "2026-05-13 23:31:44", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "document_tool_response", "details": "length=344"}
+{"timestamp": "2026-05-13 23:31:44", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=344"}
+{"timestamp": "2026-05-13 23:31:45", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['fixed_deposit']"}
+{"timestamp": "2026-05-13 23:32:04", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "Should I have account in the bank?"}
+{"timestamp": "2026-05-13 23:32:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:32:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_continued", "details": "last_intent=document_checklist reply='Should I have account in the bank?'"}
+{"timestamp": "2026-05-13 23:32:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:32:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:32:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:32:05", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "document_tool_called", "details": "Should I have account in the bank?"}
+{"timestamp": "2026-05-13 23:32:06", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "document_tool_response", "details": "length=121"}
+{"timestamp": "2026-05-13 23:32:06", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=121"}
+{"timestamp": "2026-05-13 23:32:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account', 'fixed_deposit', 'account_inquiry']"}
+{"timestamp": "2026-05-13 23:32:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:32:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=1 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:32:07", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_auto_saved", "details": "turns=3"}
+{"timestamp": "2026-05-13 23:32:23", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "do you have any saving scheme"}
+{"timestamp": "2026-05-13 23:32:25", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "faq"}
+{"timestamp": "2026-05-13 23:32:25", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=faq style=default"}
+{"timestamp": "2026-05-13 23:32:25", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "faq"}
+{"timestamp": "2026-05-13 23:32:25", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "faq_tool"}
+{"timestamp": "2026-05-13 23:32:25", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "faq_tool_called", "details": "do you have any saving scheme"}
+{"timestamp": "2026-05-13 23:32:25", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "faq_chunks_retrieved", "details": "count=3"}
+{"timestamp": "2026-05-13 23:32:26", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "WARNING", "event": "faq_fallback", "details": "not in FAQ: do you have any saving scheme"}
+{"timestamp": "2026-05-13 23:32:26", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=faq style=default length=90"}
+{"timestamp": "2026-05-13 23:32:27", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account']"}
+{"timestamp": "2026-05-13 23:32:38", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "Thanks"}
+{"timestamp": "2026-05-13 23:32:39", "session_id": "SESS-20260513-481", "persona": "existing_customer", "level": "INFO", "event": "small_talk", "details": "Thanks"}
+{"timestamp": "2026-05-13 23:34:53", "session_id": "SESS-20260513-452", "persona": "existing_customer", "level": "INFO", "event": "memory_loaded", "details": "session_count=1 last_seen=2026-05-13 23:32"}
+{"timestamp": "2026-05-13 23:34:53", "session_id": "SESS-20260513-452", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "persona=existing_customer returning=True"}
+{"timestamp": "2026-05-13 23:35:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "memory_new_user", "details": "no previous memory found"}
+{"timestamp": "2026-05-13 23:35:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "session_started", "details": "persona=banker returning=False"}
+{"timestamp": "2026-05-13 23:35:45", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "user_message", "details": "what is the policy for loan disbursement"}
+{"timestamp": "2026-05-13 23:35:47", "session_id": "SESS-20260513-497", "persona": "banker", "level": "WARNING", "event": "guardrail_triggered", "details": "what is the policy for loan disbursement"}
+{"timestamp": "2026-05-13 23:36:07", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "user_message", "details": "can you check my loan details"}
+{"timestamp": "2026-05-13 23:36:09", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:36:09", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:36:09", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:36:09", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:36:09", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "can you check my loan details"}
+{"timestamp": "2026-05-13 23:36:09", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=43"}
+{"timestamp": "2026-05-13 23:36:10", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "memory_products_tracked", "details": "products=['personal_loan']"}
+{"timestamp": "2026-05-13 23:37:22", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "user_message", "details": "EMP-3310"}
+{"timestamp": "2026-05-13 23:37:23", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:37:24", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='EMP-3310' result='i'm sorry, but i can't determine whether the customer is leaving or declining further help based on \"emp-3310\".'"}
+{"timestamp": "2026-05-13 23:37:24", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=account_inquiry reply='EMP-3310'"}
+{"timestamp": "2026-05-13 23:37:24", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:37:24", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:37:24", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:37:24", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "EMP-3310"}
+{"timestamp": "2026-05-13 23:37:25", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "banker_auth_success", "details": "role=Employee"}
+{"timestamp": "2026-05-13 23:37:25", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=42"}
+{"timestamp": "2026-05-13 23:37:56", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "user_message", "details": "EMP-3310"}
+{"timestamp": "2026-05-13 23:37:58", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:37:59", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='EMP-3310' result='i'm sorry, but i can't determine whether the customer is leaving or declining further help based on \"emp-3310\".'"}
+{"timestamp": "2026-05-13 23:37:59", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=account_inquiry reply='EMP-3310'"}
+{"timestamp": "2026-05-13 23:37:59", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:37:59", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:37:59", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:37:59", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "EMP-3310"}
+{"timestamp": "2026-05-13 23:38:00", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "banker_auth_success", "details": "role=Employee"}
+{"timestamp": "2026-05-13 23:38:00", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=42"}
+{"timestamp": "2026-05-13 23:38:00", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:38:00", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "memory_saved", "details": "session_count=1 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:38:00", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "memory_auto_saved", "details": "turns=3"}
+{"timestamp": "2026-05-13 23:38:13", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "user_message", "details": "No customer Id because I am employee of bank"}
+{"timestamp": "2026-05-13 23:38:15", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:38:16", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='No customer Id because I am employee of bank' result='no'"}
+{"timestamp": "2026-05-13 23:38:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=account_inquiry reply='No customer Id because I am employee of bank'"}
+{"timestamp": "2026-05-13 23:38:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:38:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:38:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:38:16", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "No customer Id because I am employee of bank"}
+{"timestamp": "2026-05-13 23:38:17", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "banker_auth_success", "details": "role=Employee"}
+{"timestamp": "2026-05-13 23:38:17", "session_id": "SESS-20260513-497", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=42"}
+{"timestamp": "2026-05-13 23:41:34", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_loaded", "details": "session_count=1 last_seen=2026-05-13 23:38"}
+{"timestamp": "2026-05-13 23:41:34", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "session_started", "details": "persona=banker returning=True"}
+{"timestamp": "2026-05-13 23:41:48", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "Can you show my loan details"}
+{"timestamp": "2026-05-13 23:41:51", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:41:51", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:41:51", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:41:51", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:41:51", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "Can you show my loan details"}
+{"timestamp": "2026-05-13 23:41:52", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=43"}
+{"timestamp": "2026-05-13 23:41:53", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_products_tracked", "details": "products=['personal_loan']"}
+{"timestamp": "2026-05-13 23:42:04", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "EMP-3310"}
+{"timestamp": "2026-05-13 23:42:06", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:42:07", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='EMP-3310' result='i'm sorry, but i can't determine whether the customer is leaving or declining further help based on \"emp-3310\".'"}
+{"timestamp": "2026-05-13 23:42:07", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=account_inquiry reply='EMP-3310'"}
+{"timestamp": "2026-05-13 23:42:07", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:42:07", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:42:07", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:42:07", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "EMP-3310"}
+{"timestamp": "2026-05-13 23:42:08", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "banker_auth_success", "details": "role=Employee"}
+{"timestamp": "2026-05-13 23:42:08", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=119"}
+{"timestamp": "2026-05-13 23:42:33", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "[CUSTOMER_ID_REDACTED]"}
+{"timestamp": "2026-05-13 23:42:35", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='[CUSTOMER_ID_REDACTED]' result='i'm sorry, but i can't determine if the customer is leaving or declining further help based on \"cust-10236\" alone. could you provide more context or a specific phrase from the customer?'"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=account_inquiry reply='[CUSTOMER_ID_REDACTED]'"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=account_inquiry style=default"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "account_inquiry"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "[CUSTOMER_ID_REDACTED]"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "banker_auth_success", "details": "role=Employee"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "account_banker_view_returned", "details": "customer=[CUSTOMER_ID_REDACTED]"}
+{"timestamp": "2026-05-13 23:42:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=account_inquiry style=default length=1026"}
+{"timestamp": "2026-05-13 23:42:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:42:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_saved", "details": "session_count=2 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:42:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_auto_saved", "details": "turns=3"}
+{"timestamp": "2026-05-13 23:42:53", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "What is the process to close home loan"}
+{"timestamp": "2026-05-13 23:42:54", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "faq"}
+{"timestamp": "2026-05-13 23:42:54", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=faq style=default"}
+{"timestamp": "2026-05-13 23:42:54", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "faq"}
+{"timestamp": "2026-05-13 23:42:55", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "faq_tool"}
+{"timestamp": "2026-05-13 23:42:56", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "faq_tool_called", "details": "What is the process to close home loan"}
+{"timestamp": "2026-05-13 23:42:56", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "faq_chunks_retrieved", "details": "count=3"}
+{"timestamp": "2026-05-13 23:42:59", "session_id": "SESS-20260513-242", "persona": "banker", "level": "WARNING", "event": "faq_fallback", "details": "not in FAQ: What is the process to close home loan"}
+{"timestamp": "2026-05-13 23:42:59", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=faq style=default length=90"}
+{"timestamp": "2026-05-13 23:43:00", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_products_tracked", "details": "products=['home_loan']"}
+{"timestamp": "2026-05-13 23:43:07", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "Sure thanks"}
+{"timestamp": "2026-05-13 23:43:09", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "small_talk", "details": "Sure thanks"}
+{"timestamp": "2026-05-13 23:43:24", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "what documents required for vehicle loan"}
+{"timestamp": "2026-05-13 23:43:26", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:43:26", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:43:26", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:43:26", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:43:26", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "document_tool_called", "details": "what documents required for vehicle loan"}
+{"timestamp": "2026-05-13 23:43:27", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "document_tool_response", "details": "length=135"}
+{"timestamp": "2026-05-13 23:43:27", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=135"}
+{"timestamp": "2026-05-13 23:43:28", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_products_tracked", "details": "products=['car_loan']"}
+{"timestamp": "2026-05-13 23:43:35", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "lis of docs"}
+{"timestamp": "2026-05-13 23:43:36", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:43:37", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='lis of docs' result='no'"}
+{"timestamp": "2026-05-13 23:43:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=document_checklist reply='lis of docs'"}
+{"timestamp": "2026-05-13 23:43:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:43:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:43:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:43:37", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "document_tool_called", "details": "lis of docs"}
+{"timestamp": "2026-05-13 23:43:38", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "document_tool_response", "details": "length=122"}
+{"timestamp": "2026-05-13 23:43:38", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=122"}
+{"timestamp": "2026-05-13 23:43:39", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_products_tracked", "details": "products=['car_loan']"}
+{"timestamp": "2026-05-13 23:43:39", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:43:39", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_saved", "details": "session_count=3 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:43:39", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_auto_saved", "details": "turns=6"}
+{"timestamp": "2026-05-13 23:43:57", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "user_message", "details": "salaried"}
+{"timestamp": "2026-05-13 23:43:59", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:44:00", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='salaried' result='no'"}
+{"timestamp": "2026-05-13 23:44:00", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_continued", "details": "last_intent=document_checklist reply='salaried'"}
+{"timestamp": "2026-05-13 23:44:00", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:44:00", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:44:00", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:44:00", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "document_tool_called", "details": "salaried"}
+{"timestamp": "2026-05-13 23:44:01", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "document_tool_response", "details": "length=358"}
+{"timestamp": "2026-05-13 23:44:01", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=358"}
+{"timestamp": "2026-05-13 23:44:02", "session_id": "SESS-20260513-242", "persona": "banker", "level": "INFO", "event": "memory_products_tracked", "details": "products=['car_loan']"}
+{"timestamp": "2026-05-13 23:50:20", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "memory_loaded", "details": "session_count=3 last_seen=2026-05-13 23:30"}
+{"timestamp": "2026-05-13 23:50:20", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "session_started", "details": "persona=new_customer returning=True"}
+{"timestamp": "2026-05-13 23:50:38", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "I want to open account"}
+{"timestamp": "2026-05-13 23:50:47", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:50:47", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:50:47", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:50:47", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:50:47", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "document_tool_called", "details": "I want to open account"}
+{"timestamp": "2026-05-13 23:50:49", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=294"}
+{"timestamp": "2026-05-13 23:50:49", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=294"}
+{"timestamp": "2026-05-13 23:50:50", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account', 'current_account', 'joint_account', 'nri_account', 'account_inquiry']"}
+{"timestamp": "2026-05-13 23:50:56", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "user_message", "details": "5"}
+{"timestamp": "2026-05-13 23:51:00", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:51:01", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='5' result='i'm sorry, but i can't determine the customer's intent based on the information provided.'"}
+{"timestamp": "2026-05-13 23:51:01", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "intent_continued", "details": "last_intent=document_checklist reply='5'"}
+{"timestamp": "2026-05-13 23:51:01", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-13 23:51:01", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-13 23:51:01", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-13 23:51:01", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "document_tool_called", "details": "5"}
+{"timestamp": "2026-05-13 23:51:04", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=432"}
+{"timestamp": "2026-05-13 23:51:04", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=432"}
+{"timestamp": "2026-05-13 23:52:23", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-13 23:52:23", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=4 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-13 23:52:23", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "session_ended", "details": "total_turns=2 reason=api_end"}
+{"timestamp": "2026-05-13 23:52:48", "session_id": "SESS-20260513-954", "persona": "new_customer", "level": "INFO", "event": "feedback_saved", "details": "intent=session rating=positive comment=False"}
+{"timestamp": "2026-05-13 23:52:56", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "memory_loaded", "details": "session_count=1 last_seen=2026-05-13 23:32"}
+{"timestamp": "2026-05-13 23:52:56", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "persona=existing_customer returning=True"}
+{"timestamp": "2026-05-13 23:53:31", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "Am I eligible for home loan?"}
+{"timestamp": "2026-05-13 23:53:32", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "eligibility"}
+{"timestamp": "2026-05-13 23:53:32", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=eligibility style=default"}
+{"timestamp": "2026-05-13 23:53:32", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "eligibility"}
+{"timestamp": "2026-05-13 23:53:32", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "eligibility_tool"}
+{"timestamp": "2026-05-13 23:53:32", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "eligibility_tool_called", "details": "Am I eligible for home loan?"}
+{"timestamp": "2026-05-13 23:53:33", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "eligibility_llm_response", "details": "length=335"}
+{"timestamp": "2026-05-13 23:53:33", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=eligibility style=default length=335"}
+{"timestamp": "2026-05-13 23:53:34", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['home_loan']"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "40 , 100000 , cibil 650 , 40000 emi per month"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "intent_continued", "details": "last_intent=eligibility reply='40 , 100000 , cibil 650 , 40000 emi per month'"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=eligibility style=default"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "eligibility"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "eligibility_tool"}
+{"timestamp": "2026-05-13 23:53:57", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "eligibility_tool_called", "details": "40 , 100000 , cibil 650 , 40000 emi per month"}
+{"timestamp": "2026-05-13 23:54:00", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "eligibility_llm_response", "details": "length=554"}
+{"timestamp": "2026-05-13 23:54:00", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=eligibility style=default length=554"}
+{"timestamp": "2026-05-13 23:54:00", "session_id": "SESS-20260513-659", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['home_loan']"}
+{"timestamp": "2026-05-14 00:08:45", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_new_user", "details": "no previous memory found"}
+{"timestamp": "2026-05-14 00:08:45", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "user_id=haritha_demo persona=existing_customer returning=False"}
+{"timestamp": "2026-05-14 00:09:34", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "please show my tickets"}
+{"timestamp": "2026-05-14 00:09:39", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-14 00:09:40", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='please show my tickets' result='no'"}
+{"timestamp": "2026-05-14 00:09:40", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "WARNING", "event": "intent_unknown", "details": "please show my tickets"}
+{"timestamp": "2026-05-14 00:10:04", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "I want to log a complaint"}
+{"timestamp": "2026-05-14 00:10:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "complaint"}
+{"timestamp": "2026-05-14 00:10:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=complaint style=default"}
+{"timestamp": "2026-05-14 00:10:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "complaint"}
+{"timestamp": "2026-05-14 00:10:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "complaint_tool"}
+{"timestamp": "2026-05-14 00:10:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "complaint_tool_called", "details": "I want to log a complaint"}
+{"timestamp": "2026-05-14 00:10:06", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "complaint_details_needed", "details": "I want to log a complaint"}
+{"timestamp": "2026-05-14 00:10:06", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=complaint style=default length=245"}
+{"timestamp": "2026-05-14 00:10:07", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['complaint']"}
+{"timestamp": "2026-05-14 00:10:32", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "I forgot my online banking password, please reset it"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "complaint"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=complaint style=default"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "complaint"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "complaint_tool"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "complaint_tool_called", "details": "I forgot my online banking password, please reset it"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "complaint_logged", "details": "ticket_id=TKT-2026-77743 priority=Low"}
+{"timestamp": "2026-05-14 00:10:33", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=complaint style=default length=327"}
+{"timestamp": "2026-05-14 00:10:34", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['complaint', 'net_banking']"}
+{"timestamp": "2026-05-14 00:10:34", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_ticket_id_tracked", "details": "ticket_id=TKT-2026-77743"}
+{"timestamp": "2026-05-14 00:11:02", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "Please show my tickets"}
+{"timestamp": "2026-05-14 00:11:04", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='Please show my tickets' result='no'"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_continued", "details": "last_intent=complaint reply='Please show my tickets'"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=complaint style=default"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "complaint"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "complaint_tool"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "ticket_status_called", "details": "ticket_id=TKT-2026-77743"}
+{"timestamp": "2026-05-14 00:11:05", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=complaint style=default length=439"}
+{"timestamp": "2026-05-14 00:11:06", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['complaint', 'net_banking']"}
+{"timestamp": "2026-05-14 00:11:06", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-14 00:11:06", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=0 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-14 00:11:06", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_auto_saved", "details": "turns=3"}
+{"timestamp": "2026-05-14 00:11:39", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-14 00:11:39", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=1 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-14 00:11:39", "session_id": "SESS-20260514-875", "persona": "existing_customer", "level": "INFO", "event": "session_ended", "details": "total_turns=3 reason=api_end"}
+{"timestamp": "2026-05-14 00:11:48", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "memory_new_user", "details": "no previous memory found"}
+{"timestamp": "2026-05-14 00:11:48", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "user_id=haritha_demo2 persona=existing_customer returning=False"}
+{"timestamp": "2026-05-14 00:12:19", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "I want to open an account"}
+{"timestamp": "2026-05-14 00:12:22", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "document_checklist"}
+{"timestamp": "2026-05-14 00:12:22", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-14 00:12:22", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-14 00:12:22", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-14 00:12:22", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "document_tool_called", "details": "I want to open an account"}
+{"timestamp": "2026-05-14 00:12:23", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "document_tool_response", "details": "length=338"}
+{"timestamp": "2026-05-14 00:12:23", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=338"}
+{"timestamp": "2026-05-14 00:12:24", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['account_inquiry']"}
+{"timestamp": "2026-05-14 00:12:29", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "user_message", "details": "1"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "intent_detected_llm", "details": "unknown"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SYSTEM", "persona": "system", "level": "INFO", "event": "exit_check", "details": "message='1' result='no'"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "intent_continued", "details": "last_intent=document_checklist reply='1'"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "feedback_style_applied", "details": "intent=document_checklist style=default"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "intent_confirmed", "details": "document_checklist"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-14 00:12:30", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "document_tool_called", "details": "1"}
+{"timestamp": "2026-05-14 00:12:32", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "document_tool_response", "details": "length=437"}
+{"timestamp": "2026-05-14 00:12:32", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "agent_response", "details": "intent=document_checklist style=default length=437"}
+{"timestamp": "2026-05-14 00:12:33", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "memory_products_tracked", "details": "products=['savings_account']"}
+{"timestamp": "2026-05-14 00:13:03", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "memory_save_started", "details": ""}
+{"timestamp": "2026-05-14 00:13:03", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "memory_saved", "details": "session_count=1 keys=['first_seen', 'last_seen', 'persona', 'session_count', 'products_enquired', 'last_intent', 'ticket_ids']"}
+{"timestamp": "2026-05-14 00:13:03", "session_id": "SESS-20260514-389", "persona": "existing_customer", "level": "INFO", "event": "session_ended", "details": "total_turns=2 reason=api_end"}
+{"timestamp": "2026-05-14 00:13:09", "session_id": "SESS-20260514-333", "persona": "new_customer", "level": "INFO", "event": "memory_new_user", "details": "no previous memory found"}
+{"timestamp": "2026-05-14 00:13:10", "session_id": "SESS-20260514-333", "persona": "new_customer", "level": "INFO", "event": "session_started", "details": "user_id=haritha_demo persona=new_customer returning=False"}
+{"timestamp": "2026-05-14 00:13:16", "session_id": "SESS-20260514-880", "persona": "existing_customer", "level": "INFO", "event": "memory_loaded", "details": "session_count=1 last_seen=2026-05-14 00:11"}
+{"timestamp": "2026-05-14 00:13:16", "session_id": "SESS-20260514-880", "persona": "existing_customer", "level": "INFO", "event": "session_started", "details": "user_id=haritha_demo persona=existing_customer returning=True"}
+{"timestamp": "2026-05-14 01:25:27", "session_id": "SESS-20260514-638", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "faq_tool"}
+{"timestamp": "2026-05-14 01:25:27", "session_id": "SESS-20260514-638", "persona": "existing_customer", "level": "INFO", "event": "faq_tool_called", "details": "What is the minimum balance for a savings account?"}
+{"timestamp": "2026-05-14 01:25:28", "session_id": "SESS-20260514-638", "persona": "existing_customer", "level": "INFO", "event": "faq_chunks_retrieved", "details": "count=3"}
+{"timestamp": "2026-05-14 01:25:31", "session_id": "SESS-20260514-638", "persona": "existing_customer", "level": "INFO", "event": "faq_answer_generated", "details": "length=103"}
+{"timestamp": "2026-05-14 01:25:32", "session_id": "SESS-20260514-475", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "document_tool"}
+{"timestamp": "2026-05-14 01:25:32", "session_id": "SESS-20260514-475", "persona": "new_customer", "level": "INFO", "event": "document_tool_called", "details": "I want to open a savings account. What documents do I need?"}
+{"timestamp": "2026-05-14 01:25:34", "session_id": "SESS-20260514-475", "persona": "new_customer", "level": "INFO", "event": "document_tool_response", "details": "length=510"}
+{"timestamp": "2026-05-14 01:25:35", "session_id": "SESS-20260514-779", "persona": "new_customer", "level": "INFO", "event": "tool_called", "details": "eligibility_tool"}
+{"timestamp": "2026-05-14 01:25:35", "session_id": "SESS-20260514-779", "persona": "new_customer", "level": "INFO", "event": "eligibility_tool_called", "details": "Can I get a personal loan? My age is 28, salary is 40000, CIBIL is 730 and I have no EMIs."}
+{"timestamp": "2026-05-14 01:25:37", "session_id": "SESS-20260514-779", "persona": "new_customer", "level": "INFO", "event": "eligibility_llm_response", "details": "length=983"}
+{"timestamp": "2026-05-14 01:25:38", "session_id": "SESS-20260514-106", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "locator_tool"}
+{"timestamp": "2026-05-14 01:25:38", "session_id": "SESS-20260514-106", "persona": "existing_customer", "level": "INFO", "event": "locator_tool_called", "details": "Find the nearest ATM in Ameerpet."}
+{"timestamp": "2026-05-14 01:25:39", "session_id": "SESS-20260514-106", "persona": "existing_customer", "level": "INFO", "event": "locator_exact_match", "details": "area=Ameerpet type=atm"}
+{"timestamp": "2026-05-14 01:25:40", "session_id": "SESS-20260514-519", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "complaint_tool"}
+{"timestamp": "2026-05-14 01:25:40", "session_id": "SESS-20260514-519", "persona": "existing_customer", "level": "INFO", "event": "complaint_tool_called", "details": "My ATM transaction failed and Rs.5000 was debited. Please raise a complaint."}
+{"timestamp": "2026-05-14 01:25:41", "session_id": "SESS-20260514-519", "persona": "existing_customer", "level": "INFO", "event": "complaint_logged", "details": "ticket_id=TKT-2026-80940 priority=Low"}
+{"timestamp": "2026-05-14 01:25:42", "session_id": "SESS-20260514-329", "persona": "existing_customer", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-14 01:25:42", "session_id": "SESS-20260514-329", "persona": "existing_customer", "level": "INFO", "event": "account_tool_called", "details": "Show my account details. My customer ID is [CUSTOMER_ID_REDACTED] and mobile number is [MOBILE_REDACTED]."}
+{"timestamp": "2026-05-14 01:25:42", "session_id": "SESS-20260514-329", "persona": "existing_customer", "level": "INFO", "event": "auth_success", "details": "verified"}
+{"timestamp": "2026-05-14 01:25:42", "session_id": "SESS-20260514-329", "persona": "existing_customer", "level": "INFO", "event": "account_details_returned", "details": "status=Active"}
+{"timestamp": "2026-05-14 01:25:43", "session_id": "SESS-20260514-116", "persona": "banker", "level": "INFO", "event": "tool_called", "details": "account_tool"}
+{"timestamp": "2026-05-14 01:25:43", "session_id": "SESS-20260514-116", "persona": "banker", "level": "INFO", "event": "account_tool_called", "details": "Check loan details for customer [CUSTOMER_ID_REDACTED]. My employee ID is EMP-3310."}
+{"timestamp": "2026-05-14 01:25:43", "session_id": "SESS-20260514-116", "persona": "banker", "level": "INFO", "event": "banker_auth_success", "details": "role=Employee"}
+{"timestamp": "2026-05-14 01:25:43", "session_id": "SESS-20260514-116", "persona": "banker", "level": "INFO", "event": "account_banker_view_returned", "details": "customer=[CUSTOMER_ID_REDACTED]"}

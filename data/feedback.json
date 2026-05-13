@@ -1,0 +1,32 @@
+{
+  "existing_customer": {
+    "faq": {
+      "positive": 0,
+      "negative": 3,
+      "last_rated": "2026-05-13 21:00"
+    },
+    "eligibility": {
+      "positive": 5,
+      "negative": 0,
+      "last_rated": "2026-05-13 21:00"
+    },
+    "locator": {
+      "positive": 2,
+      "negative": 2,
+      "last_rated": "2026-05-13 21:00"
+    },
+    "session": {
+      "positive": 1,
+      "negative": 0,
+      "last_rated": "2026-05-13 22:10"
+    }
+  },
+  "new_customer": {
+    "session": {
+      "positive": 3,
+      "negative": 0,
+      "comments": [],
+      "last_rated": "2026-05-13 23:52"
+    }
+  }
+}
