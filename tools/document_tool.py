@@ -295,7 +295,7 @@ PROCESS_GUIDES = {
 
 def get_document_checklist(user_message, persona="existing_customer",
                            session_id="SYSTEM", chat_history=[],
-                           feedback_style="default"):
+                           feedback_style="default", user_id=None):
     """
     Uses LLM with full chat_history for context-aware responses.
     LangChain handles context automatically — no manual string joining.
@@ -307,7 +307,11 @@ def get_document_checklist(user_message, persona="existing_customer",
 
     log_info(session_id, persona, "document_tool_called", user_message)
 
-    style_guidance = get_style_guidance(feedback_style, persona)
+    style_guidance = get_style_guidance(
+        feedback_style,
+        persona,
+        user_id=user_id
+    )
 
     # Build data context string for LLM
     services_list = "\n".join([

@@ -40,7 +40,8 @@ def get_llm():
 # ── Function 2 — System prompt builder ───────────────────────────────────────
 
 def build_system_prompt(persona, memory_context="",
-                        feedback_style="default", intent=""):
+                        feedback_style="default", intent="",
+                        user_id=None):
     """
     Builds persona-aware system prompt.
     Phase 6: memory_context injected to greet returning users
@@ -125,7 +126,11 @@ def build_system_prompt(persona, memory_context="",
     # Only activates after 3+ feedbacks — never replaces existing behaviour
     if feedback_style not in ("default", ""):
         from tools.feedback_tool import get_style_guidance
-        style_block = get_style_guidance(feedback_style, persona)
+        style_block = get_style_guidance(
+            feedback_style,
+            persona,
+            user_id=user_id
+        )
         if style_block:
             base_prompt += style_block
 
@@ -136,7 +141,7 @@ def build_system_prompt(persona, memory_context="",
 
 def get_llm_response(user_message, persona, chat_history=[],
                      memory_context="", feedback_style="default",
-                     intent=""):
+                     intent="", user_id=None):
     """
     Generates response using GPT-4o with full context.
     Phase 6: memory_context added to system prompt.
@@ -146,7 +151,8 @@ def get_llm_response(user_message, persona, chat_history=[],
 
     messages.append(
         SystemMessage(content=build_system_prompt(persona, memory_context,
-                                              feedback_style, intent))
+                                              feedback_style, intent,
+                                              user_id=user_id))
     )
 
     for msg in chat_history:

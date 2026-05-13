@@ -1,0 +1,26 @@
+# requirements.txt — Phase 2
+python-dotenv       # load API keys from .env
+
+
+# requirements.txt — Phase 3
+#pip install langchain langchain-openai openai python-dotenv
+langchain
+langchain-openai
+openai
+python-dotenv
+
+# Phase-4
+# pip install faiss-cpu tiktoken
+
+python-dotenv
+langchain
+langchain-openai
+openai
+pandas
+openpyxl
+faiss-cpu
+tiktoken
+httpx
+fastapi
+uvicorn
+streamlit

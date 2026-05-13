@@ -85,7 +85,7 @@ python llm_agent_runner.py
 | 5 | Tool Usage |  ✅ Done   |
 | 6 | Memory & Planning | ⚠️ Partial (Planning deferred) |
 | 7 | Adaptive Behaviour | ✅ Done |
-| 8 | Deployment | ⬜ Pending |
+| 8 | Deployment | ✅ Done |
 | 9 | Evaluation | ⬜ Pending |
 
 ---
@@ -408,3 +408,38 @@ get_style_guidance(style, persona)
 - `tools/locator_tool.py` — MODIFIED: accepts and applies `feedback_style`
 - `tools/complaint_tool.py` — MODIFIED: accepts and applies `feedback_style`
 - `tools/account_tool.py` — MODIFIED: accepts and applies `feedback_style`
+
+---
+
+### Phase 8 - Deployment
+
+**Deployment surface added:**
+- `api_app.py` - FastAPI backend exposing health, session, chat, end-session, and feedback endpoints
+- `streamlit_app.py` - Streamlit web UI for persona selection, chat, and feedback submission
+- `core/session_service.py` - reusable session manager that wraps the existing agent logic for web usage
+
+**Run locally:**
+```bash
+# Terminal 1 - FastAPI backend
+uvicorn api_app:app --reload
+
+# Terminal 2 - Streamlit frontend
+streamlit run streamlit_app.py
+```
+
+**Default URLs:**
+- FastAPI docs: `http://127.0.0.1:8000/docs`
+- Streamlit UI: `http://127.0.0.1:8501`
+
+**API endpoints:**
+- `GET /health`
+- `POST /sessions`
+- `POST /sessions/{session_id}/messages`
+- `POST /sessions/{session_id}/end`
+- `POST /sessions/{session_id}/feedback`
+
+**Multi-user support:**
+- Session state is persisted in SQLite (`data/banking_agent.db`) instead of in-memory Python only
+- Long-term memory and feedback are scoped by `user_id + persona`
+- Streamlit now asks for a `User ID` before starting a session
+- Multiple users can use the same deployed app without sharing conversation memory or feedback preferences

@@ -115,14 +115,19 @@ def verify_banker(employee_id, session_id="SYSTEM"):
 def get_account_details(user_message, persona="existing_customer",
                         customer_id=None, mobile=None,
                         employee_id=None, session_id="SYSTEM",
-                        chat_history=[], feedback_style="default"):
+                        chat_history=[], feedback_style="default",
+                        user_id=None):
     """
     Returns account details based on persona.
     LLM extracts credentials from full conversation context.
     """
     from tools.feedback_tool import get_style_guidance
     log_info(session_id, persona, "account_tool_called", user_message)
-    style_guidance = get_style_guidance(feedback_style, persona)
+    style_guidance = get_style_guidance(
+        feedback_style,
+        persona,
+        user_id=user_id
+    )
 
     # New customer — no account
     if persona == "new_customer":
@@ -170,7 +175,24 @@ def get_account_details(user_message, persona="existing_customer",
             return staff
 
         if not customer_id:
-            return "Please provide the Customer ID to look up."
+            lower_msg = user_message.lower()
+            if employee_id and employee_id.lower() in lower_msg:
+                return ("Your Employee ID has been verified.\n"
+                        "Please provide the customer's Customer ID to look up "
+                        "their account or loan details.")
+
+            if any(phrase in lower_msg for phrase in [
+                "no customer id", "don't have customer id",
+                "do not have customer id", "i am employee",
+                "employee of bank", "i'm employee"
+            ]):
+                return ("Your Employee ID confirms staff access, but I still need "
+                        "the customer's Customer ID to identify which account or "
+                        "loan to retrieve.\n"
+                        "Please share the customer's Customer ID.")
+
+            return ("Please provide the customer's Customer ID to look up "
+                    "their account or loan details.")
 
         customer = MOCK_CUSTOMERS.get(customer_id)
         if not customer:

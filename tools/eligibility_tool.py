@@ -54,7 +54,7 @@ ELIGIBILITY_RULES = {
 
 def check_eligibility_with_llm(user_message, persona,
                                 session_id, chat_history=[],
-                                feedback_style="default"):
+                                feedback_style="default", user_id=None):
     """
     LLM handles the complete eligibility conversation.
     - Collects missing details conversationally
@@ -75,7 +75,11 @@ def check_eligibility_with_llm(user_message, persona,
 
     log_info(session_id, persona, "eligibility_tool_called", user_message)
 
-    style_guidance = get_style_guidance(feedback_style, persona)
+    style_guidance = get_style_guidance(
+        feedback_style,
+        persona,
+        user_id=user_id
+    )
 
     # Rules as readable text for LLM
     rules_context = """

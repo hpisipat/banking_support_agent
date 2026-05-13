@@ -176,7 +176,8 @@ def update_ticket_priority(user_message, ticket_id=None,
 
 def log_complaint(user_message, customer_id=None, email=None,
                   persona="existing_customer", session_id="SYSTEM",
-                  chat_history=[], feedback_style="default"):
+                  chat_history=[], feedback_style="default",
+                  user_id=None):
     """
     Uses LLM with full chat_history to collect complaint details
     conversationally. LLM extracts all needed info from conversation.
@@ -189,7 +190,11 @@ def log_complaint(user_message, customer_id=None, email=None,
 
     log_info(session_id, persona, "complaint_tool_called", user_message)
 
-    style_guidance = get_style_guidance(feedback_style, persona)
+    style_guidance = get_style_guidance(
+        feedback_style,
+        persona,
+        user_id=user_id
+    )
 
     llm = get_llm()
 

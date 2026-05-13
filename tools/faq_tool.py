@@ -82,7 +82,8 @@ def load_faq_vectorstore():
 # ── Function 2 — Get FAQ Answer ───────────────────────────────────────────────
 
 def get_faq_answer(question, persona="existing_customer",
-                   session_id="SYSTEM", feedback_style="default"):
+                   session_id="SYSTEM", feedback_style="default",
+                   user_id=None):
     """
     Retrieves relevant FAQ chunks and generates
     grounded answer using GPT-4o.
@@ -121,7 +122,11 @@ def get_faq_answer(question, persona="existing_customer",
 
     # Feedback-driven style guidance
     from tools.feedback_tool import get_style_guidance
-    style_guidance = get_style_guidance(feedback_style, persona)
+    style_guidance = get_style_guidance(
+        feedback_style,
+        persona,
+        user_id=user_id
+    )
 
     # Prompt — strictly answers from context only
     prompt = PromptTemplate.from_template("""

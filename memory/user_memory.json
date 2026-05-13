@@ -1,0 +1,48 @@
+{
+  "new_customer": {
+    "first_seen": "2026-05-13 23:27",
+    "last_seen": "2026-05-13 23:52",
+    "persona": "new_customer",
+    "session_count": 4,
+    "products_enquired": [
+      "nri_account",
+      "credit_card",
+      "personal_loan",
+      "savings_account",
+      "account_inquiry",
+      "branch_locator",
+      "current_account",
+      "joint_account",
+      "home_loan"
+    ],
+    "last_intent": "document_checklist",
+    "ticket_ids": []
+  },
+  "existing_customer": {
+    "first_seen": "2026-05-13 23:32",
+    "last_seen": "2026-05-13 23:32",
+    "persona": "existing_customer",
+    "session_count": 1,
+    "products_enquired": [
+      "personal_loan",
+      "savings_account",
+      "fixed_deposit",
+      "account_inquiry"
+    ],
+    "last_intent": "document_checklist",
+    "ticket_ids": []
+  },
+  "banker": {
+    "first_seen": "2026-05-13 23:38",
+    "last_seen": "2026-05-13 23:43",
+    "persona": "banker",
+    "session_count": 3,
+    "products_enquired": [
+      "personal_loan",
+      "car_loan",
+      "home_loan"
+    ],
+    "last_intent": "document_checklist",
+    "ticket_ids": []
+  }
+}

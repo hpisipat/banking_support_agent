@@ -217,7 +217,7 @@ def track_ticket_id(response, session_data, session_id, persona):
 
 # ── Phase 7: Feedback Collection ─────────────────────────────────────────────
 
-def collect_feedback(session_id, persona, intent):
+def collect_feedback(session_id, persona, intent, user_id=None):
     """
     Asks user for session feedback just before goodbye.
     If negative — asks a follow-up to capture what went wrong.
@@ -230,7 +230,7 @@ def collect_feedback(session_id, persona, intent):
         ).strip().lower()
 
         if feedback_input in ["👍", "yes", "y", "1", "good", "helpful"]:
-            save_feedback(session_id, persona, intent, "positive")
+            save_feedback(session_id, persona, intent, "positive", user_id=user_id)
             log_info(session_id, persona, "feedback_received",
                      f"intent={intent} rating=positive")
             print("       Thank you for your feedback! 😊\n")
@@ -241,7 +241,7 @@ def collect_feedback(session_id, persona, intent):
                 "What could we have done better? (Enter to skip): "
             ).strip()
             save_feedback(session_id, persona, intent, "negative",
-                          comment=comment)
+                          comment=comment, user_id=user_id)
             log_info(session_id, persona, "feedback_received",
                      f"intent={intent} rating=negative comment={bool(comment)}")
             print("       Thank you — your feedback helps us improve. 🙏\n")
@@ -257,7 +257,7 @@ def collect_feedback(session_id, persona, intent):
 def route_to_tool(intent, user_message, persona, session_id,
                   chat_history, memory_context="",
                   session_data={}, memory={},
-                  feedback_style="default"):
+                  feedback_style="default", user_id=None):
     """Routes intent to real tool. All context passed."""
 
     context = get_context_from_history(chat_history)
@@ -272,7 +272,8 @@ def route_to_tool(intent, user_message, persona, session_id,
             from tools.faq_tool import get_faq_answer
             log_info(session_id, persona, "tool_called", "faq_tool")
             answer, _ = get_faq_answer(user_message, persona, session_id,
-                                       feedback_style=feedback_style)
+                                       feedback_style=feedback_style,
+                                       user_id=user_id)
             return answer
         except Exception as e:
             log_error(session_id, persona, "faq_tool_failed", str(e))
@@ -284,7 +285,7 @@ def route_to_tool(intent, user_message, persona, session_id,
             log_info(session_id, persona, "tool_called", "document_tool")
             return get_document_checklist(
                 user_message, persona, session_id, chat_history,
-                feedback_style=feedback_style)
+                feedback_style=feedback_style, user_id=user_id)
         except Exception as e:
             log_error(session_id, persona, "document_tool_failed", str(e))
             return "Please visit your nearest branch for document details."
@@ -295,7 +296,7 @@ def route_to_tool(intent, user_message, persona, session_id,
             log_info(session_id, persona, "tool_called", "eligibility_tool")
             return check_eligibility_with_llm(
                 user_message, persona, session_id, chat_history,
-                feedback_style=feedback_style)
+                feedback_style=feedback_style, user_id=user_id)
         except Exception as e:
             log_error(session_id, persona, "eligibility_tool_failed", str(e))
             return "Please visit your nearest branch for eligibility assessment."
@@ -454,7 +455,8 @@ def route_to_tool(intent, user_message, persona, session_id,
                 persona        = persona,
                 session_id     = session_id,
                 chat_history   = chat_history,
-                feedback_style = feedback_style
+                feedback_style = feedback_style,
+                user_id        = user_id
             )
 
         except Exception as e:
@@ -473,7 +475,8 @@ def route_to_tool(intent, user_message, persona, session_id,
                 employee_id    = context.get("employee_id"),
                 session_id     = session_id,
                 chat_history   = chat_history,
-                feedback_style = feedback_style
+                feedback_style = feedback_style,
+                user_id        = user_id
             )
         except Exception as e:
             log_error(session_id, persona, "account_tool_failed", str(e))
@@ -481,7 +484,8 @@ def route_to_tool(intent, user_message, persona, session_id,
 
     log_info(session_id, persona, "tool_called", f"llm_fallback:{intent}")
     return get_llm_response(user_message, persona, chat_history,
-                            memory_context, feedback_style, intent)
+                            memory_context, feedback_style, intent,
+                            user_id=user_id)
 
 
 # ── Main Agent Loop ───────────────────────────────────────────────────────────
@@ -692,7 +696,8 @@ def run_llm_agent():
                 session_data["last_intent"] = last_intent
                 save_session_memory(
                     session_id, persona,
-                    chat_history, session_data
+                    chat_history, session_data,
+                    increment_session_count=False
                 )
                 log_info(session_id, persona,
                          "memory_auto_saved",

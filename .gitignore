@@ -1,0 +1,33 @@
+# Environment variables — NEVER commit API keys
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+faiss_index/
+__pycache__/
+
+# Logs — generated at runtime
+logs/
+
+# Runtime app data
+data/banking_agent.db
+data/banking_agent.db-shm
+data/banking_agent.db-wal
+data/feedback.json
+data/session_tickets_store.json
+memory/user_memory.json
+
+# Virtual environment
+venv/
+.venv/
+
+# VS Code settings
+.vscode/
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
