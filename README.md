@@ -36,6 +36,7 @@ FAQ retrieval.
 - OpenAI text-embedding-3-small (FAQ embeddings)
 - FAISS (vector store)
 - FastAPI + Streamlit (Phase 8)
+- Docker + docker-compose (Packaging)
 - httpx (corporate proxy bypass)
 
 ---
@@ -411,12 +412,16 @@ get_style_guidance(style, persona)
 
 ---
 
-### Phase 8 - Deployment
+### Phase 8 - Deployment & Packaging
 
 **Deployment surface added:**
 - `api_app.py` - FastAPI backend exposing health, session, chat, end-session, and feedback endpoints
 - `streamlit_app.py` - Streamlit web UI for persona selection, chat, and feedback submission
 - `core/session_service.py` - reusable session manager that wraps the existing agent logic for web usage
+- `Dockerfile.api` - packaging for the FastAPI backend
+- `Dockerfile.ui` - packaging for the Streamlit frontend
+- `docker-compose.yml` - packaged startup for both services together
+- `.dockerignore` - excludes runtime artifacts from Docker builds
 
 **Run locally:**
 ```bash
@@ -443,3 +448,33 @@ streamlit run streamlit_app.py
 - Long-term memory and feedback are scoped by `user_id + persona`
 - Streamlit now asks for a `User ID` before starting a session
 - Multiple users can use the same deployed app without sharing conversation memory or feedback preferences
+
+---
+
+## Packaging
+
+**Packaging files added:**
+- `Dockerfile.api` - container image for the FastAPI backend
+- `Dockerfile.ui` - container image for the Streamlit frontend
+- `docker-compose.yml` - launches API and UI together
+- `.dockerignore` - keeps runtime artifacts out of Docker build context
+
+**Run with Docker Compose:**
+```bash
+# Build and start both services
+docker compose up --build
+```
+
+**Packaged URLs:**
+- FastAPI docs: `http://127.0.0.1:8000/docs`
+- Streamlit UI: `http://127.0.0.1:8501`
+
+**How it works:**
+- `api` service runs `uvicorn api_app:app`
+- `ui` service runs `streamlit run streamlit_app.py`
+- Streamlit talks to the API using `BANKING_AGENT_API_URL=http://api:8000`
+- `data/` and `logs/` are mounted so SQLite and logs persist outside the containers
+
+**Packaging notes:**
+- Keep `faiss_index/` in the repo so the FAQ service works immediately inside the containers
+- Add your `OPENAI_API_KEY` to `.env` before running `docker compose up --build`

@@ -1,0 +1,17 @@
+.git
+.gitignore
+.claude
+.vscode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+logs/
+data/banking_agent.db
+data/banking_agent.db-shm
+data/banking_agent.db-wal
+data/feedback.json
+data/session_tickets_store.json
+memory/user_memory.json
